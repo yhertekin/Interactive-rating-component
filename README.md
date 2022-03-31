@@ -1,4 +1,4 @@
-# Interactive rating component [Live]()
+# Interactive rating component [Live](https://yhertekin.github.io/Interactive-rating-component/)
 
 ## Desktop
 
