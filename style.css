@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(216, 12%, 54%);
+	--dark-grey: hsl(216, 10%, 30%);
+	--dark-blue: hsl(213, 19%, 18%);
+	--very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+	min-height: 100vh;
+	min-width: 100vw;
+	background: var(--very-dark-blue);
+	font-family: "Overpass", sans-serif;
+	color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 15px;
+}
+
+.card {
+	width: 400px;
+	height: 400px;
+	background: var(--dark-blue);
+	border-radius: 20px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.rating__star {
+	background: var(--dark-grey);
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.rating__header {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.rating__text {
+	color: var(--medium-grey);
+}
+
+.rating__stars {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.rating__stars--rate {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: var(--dark-grey);
+	color: var(--medium-grey);
+	font-size: 1.2rem;
+	text-align: center;
+	border-radius: 50%;
+}
+.rating__stars--rate:hover {
+	background: var(--medium-grey);
+	color: var(--white);
+}
+.rating__stars--rate:active {
+	background: var(--orange);
+	color: var(--white);
+}
+
+.rating__submit {
+	text-transform: uppercase;
+	width: 100%;
+	background: var(--orange);
+	color: var(--white);
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: none;
+}
+
+.rating__submit:active {
+	background: var(--white);
+	color: var(--orange);
+}
+
+.thank {
+	display: none;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.thank__selection {
+	background: var(--dark-grey);
+	color: var(--orange);
+	padding: 0.4rem 1rem 0.2rem 1rem;
+	border-radius: 20px;
+}
+
+.thank__header {
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
+.thank__text {
+	text-align: center;
+	color: var(--medium-grey);
+}
+
+@media only screen and (max-width: 425px) {
+	.card {
+		width: 90vw;
+	}
+}
